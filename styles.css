@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Styling part for the header section starts here**/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 100px;
+    padding: 35px;
+}
+
+header img {
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+nav ul li a#btn {
+    padding: 7px 25px;
+    border: 2px solid hsl(0, 94%, 66%);
+    background: hsl(0, 94%, 66%);
+    border-radius: 6px;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+nav ul li a#btn:hover {
+    border-color:  hsl(0, 94%, 66%);
+    background: none;
+    color: hsl(0, 94%, 66%);
+}
+
+/* Styling part for the header section ends here**/
+
+/* Styling part for the main intro section starts here**/
+
+section.main-intro {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.content-part {
+    width: 50%;
+}
+
+div.content-part > h1 {
+    font-weight:900;
+    font-size: 35px;
+    color:hsl(229, 31%, 21%);
+}
+
+div.content-part > p {
+    color: hsl(229, 8%, 60%);
+    line-height: 1.7em;
+    margin: 20px 0;
+}
+
+div.buttons {
+    position: relative;
+    top: 25px;
+}
+
+div.buttons > button {
+    padding: 12px 25px;
+    border: 2px solid hsl(231, 69%, 60%);
+    background:  hsl(231, 69%, 60%);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 25px;
+    color: #fff;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+
+div.buttons > button#bt2 {
+    color: hsl(229, 31%, 21%);
+    background: none;
+    /* border-color: #fff; */
+    box-shadow: 2px 2px 4px rgb(209, 201, 201), -2px -2px 4px rgb(209, 201, 201);
+}
+
+div.buttons > button:hover {
+    background: none;
+    color: hsl(231, 69%, 60%);
+    transition: .2s ease-in-out;
+}
+
+button#bt2:hover {
+    border-color: hsl(229, 31%, 21%);;
+}
+
+div.image-part {
+    width: 55%;
+}
+
+div.img img {
+    width: 100%;
+}
+
+div.img > div.bg {
+    z-index: -1;
+    position: absolute;
+    height: 50%;
+    width: 38%;
+    background-color: hsl(231, 69%, 60%);
+    top: 300px;
+    right: 0px;
+    border-bottom-left-radius: 100px;
+}
+
+/* Styling part for the main intro section ends here**/
+
+/* Styling part for the features section starts here**/
+section.features-section {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 65px;
+    margin-bottom: 15rem;
+}
+
+div.feature-content {
+    text-align: center;
+    line-height: 1.6em;
+}
+
+div.feature-content > h3 {
+    font-size: 23px;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 20px;
+}
+
+div.feature-content > p {
+    color:hsl(229, 8%, 60%);
+    margin-bottom: 20px;
+    width: 40%;
+    margin: 0 auto 20px;
+}
+
+div.simple-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    padding: 30px;
+    margin: 0 auto;
+}
+ 
+div.link {
+    cursor: pointer;
+}
+
+div.featured-data {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.image-part {
+    width: 55%;
+}
+
+div.image-part-feature img{
+    width: 100%;
+    position: relative;
+    right: 15%
+}
+
+div.image-content {
+    width: 45%;
+    position: relative;
+    top: 80px;
+    /* padding-left: 10px; */
+}
+
+div.image-content > h3 {
+    font-size: 23px;
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 20px;
+}
+
+div.image-content > p {
+    color:hsl(229, 8%, 60%);
+    /* margin-bottom: 20px; */
+    line-height: 1.6em;
+}
+
+div.illus {
+    z-index: -1;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background-color: hsl(231, 69%, 60%);
+    top: 350px;
+    left: -135px;
+    border-bottom-right-radius: 100px;
+}
+
+
+section.browser-section {
+    margin-bottom: 10em;
+}
+
+div.browser-cards {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+div.img-version img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 25px;
+}
+
+div.img-version {
+    text-align: center;
+}
+
+div.img-version h3 {
+    color: hsl(229, 31%, 21%);
+    font-weight: 900;
+}
+
+div.img-version p {
+    color: hsl(229, 8%, 60%);
+    font-weight: 500;
+}
+
+div.card-button {
+    top: 0;
+    left: 12px;
+    margin-top: 46px;
+}
+
+div.card {
+    padding: 25px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px hsl(233, 9%, 83%), -2px -2px 4px hsl(233, 9%, 83%);
+}
+/* Styling part for the features section ends here**/
