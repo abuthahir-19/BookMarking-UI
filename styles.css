@@ -176,16 +176,16 @@ div.link {
 
 div.featured-data {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
-div.image-part {
+div.image-part-feature {
     width: 55%;
 }
 
 div.image-part-feature img{
-    width: 100%;
+    width: 90%;
     position: relative;
     right: 15%
 }
@@ -265,3 +265,159 @@ div.card {
     box-shadow: 2px 2px 4px hsl(233, 9%, 83%), -2px -2px 4px hsl(233, 9%, 83%);
 }
 /* Styling part for the features section ends here**/
+
+/* Styling part for the faq section starts here**/
+
+section.frequently-asked-question {
+    text-align: center;
+}
+
+div.faq-section {
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+}
+
+div.accordion {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(229, 8%, 60%);
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    cursor: pointer;
+    color: hsl(229, 31%, 21%);
+    font-weight: 600;
+}
+
+div.accordion > p:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+button#arrow {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    /* transform: rotate(180deg); */
+}
+
+button#arrow.active {
+    transform: rotate(180deg);
+}
+
+div.pannel {
+    padding: 15px;
+    transition: .5s;
+    display: none;
+}
+
+div.faq-btn {
+    margin-top: 4em;
+}
+
+
+/* Styling part for the faq section ends here**/
+
+/* Styling part for the contact section starts here**/
+
+section.contact {
+    margin-top: 10em;
+    padding: 35px;
+    background-color: hsl(231, 69%, 60%);
+}
+
+section.contact > p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+section.contact > h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+div.email {
+    text-align: center;
+    padding: 20px;
+}
+
+div.email > input {
+    padding: 15px 30px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+}
+
+div.email > button {
+    padding: 13px 28px;
+    border-radius: 6px;
+    color: #fff;
+    background: hsl(0, 94%, 66%);
+    outline: none;
+    border: 2px solid transparent;
+    transition: .4s;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+div.email > button:hover {
+    background: #fff;
+    color: hsl(229, 31%, 21%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+/* Styling part for the contact section ends here**/
+
+/* Styling part for the footer section starts here**/
+
+footer.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: hsl(229, 31%, 21%);
+}
+
+div.log {
+    display: flex;
+    align-items: center;
+}
+
+div.log nav ul {
+    display: flex;
+}
+
+div.log nav ul li a{
+    color: #fff;
+    transition: .4s;
+}
+
+div.log nav ul li a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+div.social a img{
+    margin: 0 20px;
+    transition: .4s;
+}
+
+/* Styling part for the footer section ends here**/

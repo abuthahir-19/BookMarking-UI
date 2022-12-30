@@ -131,7 +131,97 @@
                 questions you'd like to answered please feel free to email us.
             </p>
         </div>
+
+        <div class="faq-section">
+            <div class="accordion">
+                <p>What is Bookmark ? </p>
+                <button class="arrow" id="arrow"><img src="images/icon-arrow.svg" alt=""></button>
+            </div>
+            <div class="pannel">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                </p>
+            </div>
+            <div class="accordion">
+                <p>How can I request a new browser? </p>
+                <button class="arrow" id="arrow"><img src="images/icon-arrow.svg" alt=""></button>
+            </div>
+            <div class="pannel">
+                <p>
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                </p>
+            </div>
+            <div class="accordion">
+                <p>Is there a mobile app? </p>
+                <button class="arrow" id="arrow"><img src="images/icon-arrow.svg" alt=""></button>
+            </div>
+            <div class="pannel">
+                <p>
+                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                    sollicitudin ex et ultricies bibendum.
+                </p>
+            </div>
+            <div class="accordion">
+                <p>What about other Chromium browsers?</p>
+                <button class="arrow" id="arrow"><img src="images/icon-arrow.svg" alt=""></button>
+            </div>
+            <div class="pannel">
+                <p>
+                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                    vitae neque eget nisl gravida pellentesque non ut velit.
+                </p>
+            </div>
+        </div>
+        <div class="buttons faq-btn">
+            <button>More Info</button>
+        </div>
     </section>
+
+    <section class="contact">
+        <p>35,000+ already joined</p>
+        <h1>Stay up-to-date with what <br> we’re doing</h1>
+        <div class="email">
+            <input type="text" placeholder="Enter your email address">
+            <button>Contact Us</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="log">
+            <img src="images/logo-bookmark-foot.svg" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="social">
+            <a href="facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="facebook"></a>
+            <a href="twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt="twitter"></a>
+        </div>
+    </footer>
 </body>
 
+<script>
+    var btn = document.getElementsByClassName ('arrow')
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener('click', function () {
+            this.classList.toggle('active');
+            var pannel = this.parentElement.nextElementSibling;
+            if (pannel.style.display === 'block')
+                pannel.style.display = 'none';
+            else pannel.style.display = 'block';
+        })
+    }
+    
+
+</script>
 </html>
